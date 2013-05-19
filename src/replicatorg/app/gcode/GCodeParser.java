@@ -145,6 +145,7 @@ public class GCodeParser {
 			else
 				step = steps - s;
 
+			newPoint = new Point5d(current);
 			// calculate our waypoint.
 			newPoint.setX(center.x() + radius * Math.cos(angleA + angle * ((double) step / steps)));
 			newPoint.setY(center.y() + radius * Math.sin(angleA + angle * ((double) step / steps)));
